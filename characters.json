@@ -1,0 +1,119 @@
+{
+    "704856608722649158": {
+        "name": "aztharorth",
+        "level": 2,
+        "xp": 150,
+        "xp_required": 200,
+        "stats": {
+            "Destreza": 10,
+            "Fuerza": 18,
+            "Inteligencia": 25
+        },
+        "skills": [
+            "big bang attack bola de energía que beneficia al usuario con x3 en el dado y +1500 de bonificador",
+            "Acrobacias",
+            "Atletismo",
+            "Engaño",
+            "Perspicacia",
+            "Intimidación",
+            "Investigación",
+            "Medicina",
+            "Percepción",
+            "Interpretación",
+            "Juego de manos",
+            "Sigilo",
+            "Supervivencia"
+        ],
+        "items": [],
+        "fame": 0,
+        "quests": [],
+        "appearance": "Sin descripción",
+        "image_url": "https://cdn.discordapp.com/attachments/1443809412954460287/1492933467267268749/f55eb294-604b-4b50-9c5a-272a94870911.jpg?ex=69dd2223&is=69dbd0a3&hm=db3b1b9d9f105577f23bd51f9697fd401e3f2522411f70e602c5fa5d135cc975&",
+        "pet": {
+            "name": "cuervo",
+            "image_url": "https://cdn.discordapp.com/attachments/1443809412954460287/1492934170215973106/eb21b78ca42da83699df72f2b0c2e17f.jpg?ex=69dd22cb&is=69dbd14b&hm=96f495385496748976eb3b7bd224cd1ed231e27f2f80465edec4abdd2740234e&",
+            "skills": [
+                "vista de odin permite +6 en vista y perspicacia"
+            ]
+        },
+        "dice_base": "5d500+2d100+3d300",
+        "dice_bonus": 30000,
+        "fichas": {
+            "aztharoth": {
+                "name": "aztharoth",
+                "level": 3,
+                "xp": 0,
+                "xp_required": 300,
+                "stats": {
+                    "Fuerza": 16,
+                    "Inteligencia": 18,
+                    "Constitucion": 21
+                },
+                "skills": {
+                    "engaño": 10,
+                    "Medicina": 8,
+                    "Sigilo": 7
+                },
+                "items": [
+                    {
+                        "name": "espada del caos",
+                        "qty": 1,
+                        "weight_per": 3.5
+                    },
+                    {
+                        "name": "armadura del fin",
+                        "qty": 2,
+                        "weight_per": 4.4
+                    }
+                ],
+                "fame": 20,
+                "quests": [
+                    "nivel de búsqueda alto"
+                ],
+                "appearance": "dragón de forma humana cabello dorado y piel tersa con cuernos y aureola",
+                "image_url": "https://cdn.discordapp.com/attachments/1443809412954460287/1492947351390650619/f55eb294-604b-4b50-9c5a-272a94870911.jpg?ex=69dd2f12&is=69dbdd92&hm=84aa8f77b3fdea8273f5ac438a2dc41e69afc7826003d14d1bf0415e78118dba&",
+                "dice_base": "5d500+3d200+2d100",
+                "dice_bonus": 15000,
+                "pet": {
+                    "name": "cuervo del infierno",
+                    "image_url": "https://cdn.discordapp.com/attachments/1443809412954460287/1492947767901819060/eb21b78ca42da83699df72f2b0c2e17f.jpg?ex=69dd2f75&is=69dbddf5&hm=7a821426a33d2dd770aac417135f11dbe2f6c749e0261168982bbada02bcfc5e&",
+                    "skills": [
+                        "ojos de odin +6 en búsqueda y perspicacia"
+                    ]
+                },
+                "poderes": [
+                    "big bang attack permite al usuario x3 en dados +1200",
+                    "genkidama permite al usuario x8 en ambos dados y 7000 en bonificador",
+                    "bomba galacticq",
+                    "bomba"
+                ],
+                "clan": "uchiha",
+                "clan_image": "https://cdn.discordapp.com/attachments/1443809412954460287/1493406658057998356/uchiha-clan-logo-naruto-anime-free-vector.jpg?ex=69dedad5&is=69dd8955&hm=fe671a44583b6a7fe5e60a2c0b72b8744aa18c3514189c92327d6fb3975b7377&",
+                "pensamientos": [
+                    "\"la purificación solo es el comienzo\""
+                ]
+            },
+            "mago de oz": {
+                "name": "mago de oz",
+                "level": 1,
+                "xp": 0,
+                "xp_required": 100,
+                "stats": {},
+                "skills": {},
+                "items": [],
+                "fame": 0,
+                "quests": [],
+                "appearance": "Sin descripción",
+                "image_url": null,
+                "dice_base": "1d20",
+                "dice_bonus": 0,
+                "pet": {
+                    "name": "Sin mascota",
+                    "image_url": null,
+                    "skills": []
+                }
+            }
+        },
+        "active": "aztharoth"
+    }
+}

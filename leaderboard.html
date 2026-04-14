@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leaderboard RPG - Tu Servidor</title>
+    <style>
+        body { font-family: Arial, sans-serif; background: #1a1a2e; color: #eee; text-align: center; }
+        h1 { color: #ffd700; }
+        table { margin: 20px auto; border-collapse: collapse; width: 80%; }
+        th, td { padding: 12px; border: 1px solid #444; }
+        th { background: #16213e; }
+        tr:nth-child(even) { background: #0f3460; }
+        .top1 { background: #ffd700 !important; color: black; font-weight: bold; }
+    </style>
+</head>
+<body>
+    <h1>🏆 Leaderboard Global RPG</h1>
+    <p id="last-update">Última actualización: Cargando...</p>
+    
+    <table id="leaderboard-table">
+        <thead>
+            <tr>
+                <th>Posición</th>
+                <th>Personaje</th>
+                <th>Dueño</th>
+                <th>Nivel</th>
+                <th>Fama</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+
+    <script>
+        fetch('leaderboard_export.json')
+            .then(response => response.json())
+            .then(data => {
+                document.getElementById('last-update').textContent = 
+                    `Última actualización: ${new Date(data.last_update).toLocaleString('es-ES')}`;
+                
+                const tbody = document.querySelector('#leaderboard-table tbody');
+                data.leaderboard.forEach((entry, index) => {
+                    const row = document.createElement('tr');
+                    if (index === 0) row.classList.add('top1');
+                    row.innerHTML = `
+                        <td>${index + 1}</td>
+                        <td>${entry.nombre}</td>
+                        <td>${entry.dueño}</td>
+                        <td>${entry.nivel}</td>
+                        <td>${entry.fama}</td>
+                    `;
+                    tbody.appendChild(row);
+                });
+            })
+            .catch(err => {
+                document.body.innerHTML += "<p style='color:red;'>Error cargando el leaderboard. Asegúrate de que leaderboard_export.json esté en la misma carpeta.</p>";
+            });
+    </script>
+</body>
+</html>
